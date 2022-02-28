@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		6521C11827CC863300952542 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6521C11627CC863300952542 /* LaunchScreen.storyboard */; };
 		6521C12327CC863300952542 /* HiArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C12227CC863300952542 /* HiArtTests.swift */; };
 		6521C12E27CC863300952542 /* HiArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C12D27CC863300952542 /* HiArtUITests.swift */; };
+		65340E5927CD441D00B38E95 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 65340E5827CD441D00B38E95 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65340E5927CD441D00B38E95 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6521C13227CC863300952542 /* Build configuration list for PBXNativeTarget "HiArt" */;
 			buildPhases = (
+				65F51F5B27CD661E00392391 /* Run SwiftLint */,
 				6521C10427CC863100952542 /* Sources */,
 				6521C10527CC863100952542 /* Frameworks */,
 				6521C10627CC863100952542 /* Resources */,
@@ -144,6 +147,9 @@
 			dependencies = (
 			);
 			name = HiArt;
+			packageProductDependencies = (
+				65340E5827CD441D00B38E95 /* Alamofire */,
+			);
 			productName = HiArt;
 			productReference = 6521C10827CC863100952542 /* HiArt.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +221,9 @@
 				Base,
 			);
 			mainGroup = 6521C0FF27CC863100952542;
+			packageReferences = (
+				65340E5727CD441D00B38E95 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6521C10927CC863100952542 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -252,6 +261,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65F51F5B27CD661E00392391 /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6521C10427CC863100952542 /* Sources */ = {
@@ -366,13 +396,14 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -421,12 +452,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -446,7 +478,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +497,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -593,6 +625,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65340E5727CD441D00B38E95 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65340E5827CD441D00B38E95 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65340E5727CD441D00B38E95 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6521C10027CC863100952542 /* Project object */;
 }
