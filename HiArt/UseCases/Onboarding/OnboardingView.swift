@@ -26,7 +26,7 @@ class OnboardingView: BaseView {
         return label
     }()
 
-    lazy var loginButton: UIButton = {
+    lazy var goLoginButton: UIButton = {
         let button = UIButton()
         button.setTitle("Go to login",
                         for: .normal)
@@ -43,7 +43,7 @@ extension OnboardingView {
     override func buildHierarchy() {
         containerView.addArrangedSubview(titleLabel)
         containerView.addArrangedSubview(descriptionLabel)
-        containerView.addArrangedSubview(loginButton)
+        containerView.addArrangedSubview(goLoginButton)
         addSubview(containerView)
     }
 
@@ -57,7 +57,7 @@ extension OnboardingView {
 
     override func setupEvents() {
         print("setupEvents")
-        loginButton.addTarget(self,
+        goLoginButton.addTarget(self,
                          action: #selector(pressButton),
                          for: .touchUpInside)
     }
