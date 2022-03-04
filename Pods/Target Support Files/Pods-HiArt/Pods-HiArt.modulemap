@@ -1,0 +1,6 @@
+module Pods_HiArt {
+  umbrella header "Pods-HiArt-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+module Pods_HiArt_HiArtUITests {
+  umbrella header "Pods-HiArt-HiArtUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
