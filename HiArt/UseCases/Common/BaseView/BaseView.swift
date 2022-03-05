@@ -9,12 +9,11 @@ import UIKit
 import EasyPeasy
 
 class BaseView: UIView {
-    lazy var containerView: UIStackView = {
+    lazy var container: UIStackView = {
         let stackView = UIStackView()
+        stackView.distribution = .fill
         stackView.axis = .vertical
-        stackView.spacing = 8
-        stackView.distribution = .equalSpacing
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        stackView.spacing = 0
         return stackView
     }()
 
@@ -35,6 +34,6 @@ extension BaseView: ViewConfigurationProtocol {
     }
     @objc func setupEvents() {}
     @objc func setupContrains() {
-        containerView.easy.layout(Edges(0))
+        container.easy.layout(Edges(0))
     }
 }

@@ -42,7 +42,7 @@ class LoginView: BaseView {
         floatButton.easy.clear()
         floatButton.easy.layout(
             Center(0.0),
-            Top(20.0).to(containerView)
+            Top(20.0).to(container)
         )
     }
 }
@@ -50,17 +50,17 @@ class LoginView: BaseView {
 extension LoginView {
     override func buildHierarchy() {
         super.buildHierarchy()
-        containerView.addArrangedSubviews(
+        container.addArrangedSubviews(
             [titleLabel, loginButton]
         )
         addSubViews([
-            containerView,
+            container,
             floatButton
         ])
     }
 
     override func setupContrains() {
-        containerView.easy.layout(
+        container.easy.layout(
             Center(0.0)
         )
         loginButton.easy.layout(Height(50))

@@ -7,4 +7,5 @@
 
 protocol OnboardingControllerProtocol {
     func goToLogin()
+    func nextStep()
 }
