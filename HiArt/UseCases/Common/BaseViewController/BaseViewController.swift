@@ -11,7 +11,25 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("estamos en el baseviewcontroller")
+        setupNavbar()
         edgesForExtendedLayout = []
+    }
+
+    func setupNavbar() {
+        navigationController?.navigationBar.barTintColor = .white
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.shadowImage = UIImage()
+    }
+
+    func addCloseNavigationBar() {
+        navigationItem.rightBarButtonItem =
+            UIBarButtonItem(title: "╳",
+                            style: .plain,
+                            target: self,
+                            action: #selector(close))
+    }
+
+    @objc func close() {
+        print("Salir")
     }
 }
