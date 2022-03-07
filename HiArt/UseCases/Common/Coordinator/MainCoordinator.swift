@@ -24,6 +24,6 @@ class MainCoordinator: Coordinator {
     func showLogin() {
         let viewController = LoginViewController()
         viewController.coordinator = self
-        navigationController.pushViewController(viewController, animated: true)
+        navigationController.pushViewController(viewController, animated: false)
     }
 }
