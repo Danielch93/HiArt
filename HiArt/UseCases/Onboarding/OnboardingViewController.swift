@@ -12,6 +12,7 @@ class OnboardingViewController: BaseViewController {
     // MARK: - Variable declaration
 
     private lazy var _view = OnboardingView()
+    private var _nextPageContentOffset: CGFloat = 0
     var coordinator: MainCoordinator?
 
     // MARK: - Lyfe Cycle
@@ -20,7 +21,7 @@ class OnboardingViewController: BaseViewController {
         super.viewDidLoad()
         setupDelegates()
         setupPageController()
-        setupSteps()
+        setupScrollView()
     }
 
     override func loadView() {
@@ -28,10 +29,10 @@ class OnboardingViewController: BaseViewController {
     }
 
     override func viewDidLayoutSubviews() {
+        setupSteps()
         _view.onboardingScrollView.contentSize =
             CGSize(width: _view.frame.size.width * CGFloat(3),
                    height: _view.onboardingScrollView.frame.size.height)
-        setupSteps()
     }
 }
 
@@ -42,6 +43,10 @@ extension OnboardingViewController {
     func setupDelegates() {
         _view.delegate = self
         _view.onboardingScrollView.delegate = self
+    }
+
+    func setupScrollView() {
+        _view.onboardingScrollView.isPagingEnabled = true
     }
 
     func setupPageController() {
@@ -60,17 +65,38 @@ extension OnboardingViewController {
     }
 
     func configureNextStep() {
-        let nextPageContentOffset = _view.onboardingScrollView.contentOffset.x +
+        _nextPageContentOffset = _view.onboardingScrollView.contentOffset.x +
             _view.bounds.width + 1
 
-        if nextPageContentOffset <= _view.onboardingScrollView.contentSize.width {
+        if _nextPageContentOffset <= _view.onboardingScrollView.contentSize.width {
             UIView.animate(withDuration: 0.5) {
-                self._view.onboardingScrollView.contentOffset.x = nextPageContentOffset - 1
+                self._view.onboardingScrollView.contentOffset.x = self._nextPageContentOffset - 1
                 self._view.onboardingPageControl.currentPage += 1
             }
         } else {
             coordinator?.showLogin()
         }
+
+        updateTextButton()
+    }
+
+    func updateTextButton() {
+
+        // FIXME: Change this when create the "viewmodel" for get number of pages
+        let lastViewInDisplay = _view.frame.size.width * 2 ==
+            _view.onboardingScrollView.contentOffset.x
+
+        // TODO: Convert this to te util's function
+        let attrs = [NSAttributedString.Key.font: lastViewInDisplay ?
+                        UIFont.boldSystemFont(ofSize: 18) :
+                        UIFont.systemFont(ofSize: 18)]
+
+        let boldString = NSMutableAttributedString(string: lastViewInDisplay ?
+                                                    "GO!" :
+                                                    "Next",
+                                                   attributes: attrs)
+
+        _view.nextStepButton.setAttributedTitle(boldString, for: .normal)
     }
 }
 
@@ -78,6 +104,7 @@ extension OnboardingViewController {
 
 extension OnboardingViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        updateTextButton()
         _view.onboardingPageControl.currentPage = Int(scrollView.contentOffset.x /
                                                         _view.onboardingScrollView.frame.size.width)
     }

@@ -37,49 +37,37 @@ class OnboardingView: BaseView {
 
     lazy var nextStepButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Next ➡️",
+        button.setTitle("Next",
                         for: .normal)
-        button.backgroundColor = .blue
+        button.setTitleColor(.white, for: .normal)
+        button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
         return button
     }()
 
     lazy var testView1: UIView = {
         let view = UIView()
+        view.backgroundColor = .systemGray
         return view
     }()
 
     lazy var testView2: UIView = {
         let view = UIView()
+        view.backgroundColor = .lightGray
         return view
     }()
 
     lazy var testView3: UIView = {
         let view = UIView()
+        view.backgroundColor = .gray
         return view
     }()
 
-    var testLabel: UILabel = {
+    lazy var testLabel: UILabel = {
         let label  = UILabel()
-        label.text = "Step # 1"
+        label.text = "Step"
         label.textAlignment = .center
-        label.textColor = .blue
-        return label
-    }()
-
-    var testLabel2: UILabel = {
-        let label  = UILabel()
-        label.text = "Step # 2"
-        label.textAlignment = .center
-        label.textColor = .blue
-        return label
-    }()
-
-    var testLabel3: UILabel = {
-        let label  = UILabel()
-        label.text = "Step # 3"
-        label.textAlignment = .center
-        label.textColor = .blue
+        label.textColor = .systemBlue
         return label
     }()
 
@@ -94,9 +82,6 @@ class OnboardingView: BaseView {
 
 extension OnboardingView {
     override func buildHierarchy() {
-        testView1.addSubview(testLabel)
-        testView2.addSubview(testLabel2)
-        testView3.addSubview(testLabel3)
         containerView.addArrangedSubviews([
             onboardingScrollView,
             onboardingPageControl
@@ -127,16 +112,6 @@ extension OnboardingView {
         )
 
         testLabel.easy.layout(
-            Width(100),
-            Center(0)
-        )
-
-        testLabel2.easy.layout(
-            Width(100),
-            Center(0)
-        )
-
-        testLabel3.easy.layout(
             Width(100),
             Center(0)
         )
