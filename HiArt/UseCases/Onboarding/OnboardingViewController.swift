@@ -74,27 +74,20 @@ extension OnboardingViewController {
                 self._view.onboardingPageControl.currentPage += 1
             }
         } else {
-            coordinator?.showLogin()
+            coordinator?.showRegister()
         }
 
         updateTextButton()
     }
 
     func updateTextButton() {
-
         // FIXME: Change this when create the "viewmodel" for get number of pages
         let lastViewInDisplay = _view.frame.size.width * 2 ==
             _view.onboardingScrollView.contentOffset.x
 
-        // TODO: Convert this to te util's function
-        let attrs = [NSAttributedString.Key.font: lastViewInDisplay ?
-                        UIFont.boldSystemFont(ofSize: 18) :
-                        UIFont.systemFont(ofSize: 18)]
-
-        let boldString = NSMutableAttributedString(string: lastViewInDisplay ?
-                                                    "GO!" :
-                                                    "Next",
-                                                   attributes: attrs)
+        let boldString = lastViewInDisplay ?
+            NSMutableAttributedString().bold("Go!") :
+            NSMutableAttributedString().normal("Next")
 
         _view.nextStepButton.setAttributedTitle(boldString, for: .normal)
     }
@@ -114,7 +107,7 @@ extension OnboardingViewController: UIScrollViewDelegate {
 
 extension OnboardingViewController: OnboardingControllerProtocol {
     func goToLogin() {
-        coordinator?.showLogin()
+        coordinator?.showRegister()
     }
 
     func nextStep() {
