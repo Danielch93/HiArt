@@ -9,9 +9,9 @@ import UIKit
 import Foundation
 
 extension NSMutableAttributedString {
-    var fontSize: CGFloat { return 14 }
-    var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: 18) }
-    var normalFont: UIFont { return UIFont.systemFont(ofSize: 18) }
+    var fontSize: CGFloat { return 18 }
+    var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: fontSize) }
+    var normalFont: UIFont { return UIFont.systemFont(ofSize: fontSize) }
 
     func bold(_ text: String) -> NSMutableAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [.font: boldFont]
