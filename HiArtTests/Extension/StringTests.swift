@@ -53,7 +53,7 @@ class StringTests: XCTestCase {
 
     func testNormalStyle() {
         let normal = NSMutableAttributedString().normal(text)
-        XCTAssertEqual(self.normal(), normal)
+        XCTAssertEqual(self.normal(), self.bold())
     }
 
 }
