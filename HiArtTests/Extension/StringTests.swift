@@ -12,12 +12,12 @@ class StringTests: XCTestCase {
 
     let text = "HiArt!"
     var fontSize: CGFloat { return 18 }
-    let string = NSMutableAttributedString()
     var normalFont: UIFont { return UIFont.systemFont(ofSize: fontSize) }
     var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: fontSize) }
 
     func bold() -> NSMutableAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [.font: boldFont]
+        let string = NSMutableAttributedString()
         string.append(NSAttributedString(string: text,
                                          attributes: attributes))
         return string
@@ -25,6 +25,7 @@ class StringTests: XCTestCase {
 
     func normal() -> NSMutableAttributedString {
         let attributes: [NSAttributedString.Key: Any] = [.font: normalFont]
+        let string = NSMutableAttributedString()
         string.append(NSAttributedString(string: text,
                                          attributes: attributes))
         return string
