@@ -16,7 +16,12 @@
 		6521C12327CC863300952542 /* HiArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C12227CC863300952542 /* HiArtTests.swift */; };
 		6521C12E27CC863300952542 /* HiArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C12D27CC863300952542 /* HiArtUITests.swift */; };
 		65351713292DC4AE003C542E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65351712292DC4AE003C542E /* StringTests.swift */; };
+		655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D4294BF2BB0001EE11 /* Label.swift */; };
+		655AF4DA294C03900001EE11 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D9294C03900001EE11 /* Button.swift */; };
+		655AF4E7294C0C500001EE11 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4E6294C0C500001EE11 /* Font.swift */; };
+		655AF4ED294C12F50001EE11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4EC294C12F50001EE11 /* Constants.swift */; };
 		657739A827D16E420010FCC9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 657739A727D16E420010FCC9 /* Alamofire */; };
+		658DEEC7294C163100F45BC9 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DEEC6294C163100F45BC9 /* FontTests.swift */; };
 		6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597A39127D1A3AC00AA7365 /* StackView.swift */; };
 		65B9FF4B27CD77D000BA459B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */; };
 		65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4F27CD77E100BA459B /* OnboardingViewModel.swift */; };
@@ -689,8 +694,10 @@
 				65B9FF5C27CD793B00BA459B /* Session.swift in Sources */,
 				65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */,
 				65BCB4DA27CF0CAD00390E0B /* ViewConfigurationProtocol.swift in Sources */,
+				655AF4E7294C0C500001EE11 /* Font.swift in Sources */,
 				65BCB4D527CF09AB00390E0B /* BaseView.swift in Sources */,
 				65B9FFA327CDC5B600BA459B /* RegisterViewController.swift in Sources */,
+				655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */,
 				65BCB4DF27CF0DF900390E0B /* View.swift in Sources */,
 				65B9FF6427CD79E900BA459B /* UserDefaultsProvider.swift in Sources */,
 				65BCB4B427CEB62F00390E0B /* SceneDelegate.swift in Sources */,
@@ -706,6 +713,7 @@
 				65B9FF6E27CD7AC300BA459B /* Constants.swift in Sources */,
 				65BCB4C927CF087600390E0B /* OnboardingControllerProtocol.swift in Sources */,
 				6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */,
+				655AF4DA294C03900001EE11 /* Button.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -713,8 +721,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658DEEC7294C163100F45BC9 /* FontTests.swift in Sources */,
 				65351713292DC4AE003C542E /* StringTests.swift in Sources */,
+				658DEECC294C191B00F45BC9 /* ButtonTests.swift in Sources */,
 				6521C12327CC863300952542 /* HiArtTests.swift in Sources */,
+				655AF4ED294C12F50001EE11 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

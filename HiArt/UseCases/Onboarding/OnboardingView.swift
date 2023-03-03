@@ -37,8 +37,7 @@ class OnboardingView: BaseView {
 
     lazy var nextStepButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Next",
-                        for: .normal)
+        button.normalText("Next")
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
@@ -65,7 +64,7 @@ class OnboardingView: BaseView {
 
     lazy var testLabel: UILabel = {
         let label  = UILabel()
-        label.text = "Step"
+        label.boldText("Step")
         label.textAlignment = .center
         label.textColor = .systemBlue
         return label

@@ -11,8 +11,7 @@ import EasyPeasy
 class RegisterView: BaseView {
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Welcome to HiArt,"
-        label.font = UIFont(descriptor: .init(), size: 30.0)
+        label.titleText("Welcome to HiArt,", bold: true)
         label.textAlignment = .left
         label.textColor = .black
         return label
@@ -20,7 +19,8 @@ class RegisterView: BaseView {
 
     lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Please enter your information to register"
+        label.subTitle("Please enter your information to register")
+        label.numberOfLines = 0
         label.textAlignment = .left
         label.textColor = .black
         return label
@@ -95,8 +95,7 @@ class RegisterView: BaseView {
 
     lazy var registerButton: UIButton = {
         let button = UIButton()
-        button.setTitle("Confirm",
-                        for: .normal)
+        button.boldText("Les't Go!")
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
         return button

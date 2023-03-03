@@ -9,7 +9,8 @@ import UIKit
 import Foundation
 
 extension NSMutableAttributedString {
-    var fontSize: CGFloat { return 18 }
+    /* This file may not be necessary for the future. */
+    var fontSize: CGFloat { return CGFloat(Int.Font.body) }
     var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: fontSize) }
     var normalFont: UIFont { return UIFont.systemFont(ofSize: fontSize) }
 

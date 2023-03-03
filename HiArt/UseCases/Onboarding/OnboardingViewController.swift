@@ -85,11 +85,11 @@ extension OnboardingViewController {
         let lastViewInDisplay = _view.frame.size.width * 2 ==
             _view.onboardingScrollView.contentOffset.x
 
-        let boldString = lastViewInDisplay ?
-            NSMutableAttributedString().bold("Go!") :
-            NSMutableAttributedString().normal("Next")
-
-        _view.nextStepButton.setAttributedTitle(boldString, for: .normal)
+        _view.nextStepButton.boldText("Go!")
+        guard lastViewInDisplay else {
+            _view.nextStepButton.normalText("Next")
+            return
+        }
     }
 }
 
