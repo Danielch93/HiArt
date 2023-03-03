@@ -11,7 +11,7 @@ import XCTest
 class StringTests: XCTestCase {
 
     let text = "HiArt!"
-    var fontSize: CGFloat { return 18 }
+    var fontSize: CGFloat { return CGFloat(Int.Font.body) }
     var normalFont: UIFont { return UIFont.systemFont(ofSize: fontSize) }
     var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: fontSize) }
 
