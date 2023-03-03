@@ -22,6 +22,7 @@
 		655AF4ED294C12F50001EE11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4EC294C12F50001EE11 /* Constants.swift */; };
 		657739A827D16E420010FCC9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 657739A727D16E420010FCC9 /* Alamofire */; };
 		658DEEC7294C163100F45BC9 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DEEC6294C163100F45BC9 /* FontTests.swift */; };
+		658DEECC294C191B00F45BC9 /* ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DEECB294C191B00F45BC9 /* ButtonTests.swift */; };
 		6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597A39127D1A3AC00AA7365 /* StackView.swift */; };
 		65B9FF4B27CD77D000BA459B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */; };
 		65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4F27CD77E100BA459B /* OnboardingViewModel.swift */; };
@@ -80,6 +81,12 @@
 		6521C12D27CC863300952542 /* HiArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiArtUITests.swift; sourceTree = "<group>"; };
 		6521C12F27CC863300952542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65351712292DC4AE003C542E /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		655AF4D4294BF2BB0001EE11 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		655AF4D9294C03900001EE11 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		655AF4E6294C0C500001EE11 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		655AF4EC294C12F50001EE11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		658DEEC6294C163100F45BC9 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
+		658DEECB294C191B00F45BC9 /* ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTests.swift; sourceTree = "<group>"; };
 		6597A39127D1A3AC00AA7365 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		65B9FF4F27CD77E100BA459B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -176,7 +183,7 @@
 		6521C12127CC863300952542 /* HiArtTests */ = {
 			isa = PBXGroup;
 			children = (
-				65351711292DC495003C542E /* Extension */,
+				655AF4EB294C12E00001EE11 /* Util */,
 				6535170F292DC2FC003C542E /* UseCases */,
 				6535170E292DC2EF003C542E /* Model */,
 				6521C12227CC863300952542 /* HiArtTests.swift */,
@@ -220,8 +227,19 @@
 			isa = PBXGroup;
 			children = (
 				65351712292DC4AE003C542E /* StringTests.swift */,
+				658DEEC6294C163100F45BC9 /* FontTests.swift */,
+				658DEECB294C191B00F45BC9 /* ButtonTests.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		655AF4EB294C12E00001EE11 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				65351711292DC495003C542E /* Extension */,
+				655AF4EC294C12F50001EE11 /* Constants.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		6596174F27D1A0EC00043B27 /* Coordinator */ = {
@@ -379,6 +397,9 @@
 				65BCB4DE27CF0DF900390E0B /* View.swift */,
 				6597A39127D1A3AC00AA7365 /* StackView.swift */,
 				65F897D8280E405200E11601 /* String.swift */,
+				655AF4D4294BF2BB0001EE11 /* Label.swift */,
+				655AF4D9294C03900001EE11 /* Button.swift */,
+				655AF4E6294C0C500001EE11 /* Font.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
