@@ -9,51 +9,23 @@ import XCTest
 @testable import HiArt
 
 class StringTests: XCTestCase {
-
-    let text = "HiArt!"
-    var fontSize: CGFloat { return CGFloat(Int.Font.body) }
-    var normalFont: UIFont { return UIFont.systemFont(ofSize: fontSize) }
-    var boldFont: UIFont { return UIFont.boldSystemFont(ofSize: fontSize) }
-
-    func bold() -> NSMutableAttributedString {
-        let attributes: [NSAttributedString.Key: Any] = [.font: boldFont]
-        let string = NSMutableAttributedString()
-        string.append(NSAttributedString(string: text,
-                                         attributes: attributes))
-        return string
+    
+    let creator = "Daniel"
+    let language = NSLocale.preferredLanguages
+    let appName = NSLocalizedString("APP_NAME", comment: "")
+    
+    func testLocalized() {
+        XCTAssertEqual(appName, "APP_NAME".localized())
     }
-
-    func normal() -> NSMutableAttributedString {
-        let attributes: [NSAttributedString.Key: Any] = [.font: normalFont]
-        let string = NSMutableAttributedString()
-        string.append(NSAttributedString(string: text,
-                                         attributes: attributes))
-        return string
+    
+    func testLocalizedWithParam() {
+        let appCreator = String(format: "APP_CREATOR".localized(), creator)
+        XCTAssertEqual(appCreator, "APP_CREATOR".localized(creator))
     }
-
-    func testStringSize() {
-        let fontSize = NSMutableAttributedString().fontSize
-        XCTAssertEqual(self.fontSize, fontSize)
+    
+    func testLocalizedWithParams() {
+        let appVersion = String(format: "APP_LANGUAGE".localized(), arguments: language)
+        XCTAssertEqual(appVersion, "APP_LANGUAGE".localized(language))
     }
-
-    func testFontBold() {
-        let boldFont = NSMutableAttributedString().boldFont
-        XCTAssertEqual(self.boldFont, boldFont)
-    }
-
-    func testFontNormal() {
-        let normalFont = NSMutableAttributedString().normalFont
-        XCTAssertEqual(self.normalFont, normalFont)
-    }
-
-    func testBoldStyle() {
-        let bold = NSMutableAttributedString().bold(text)
-        XCTAssertEqual(self.bold(), bold)
-    }
-
-    func testNormalStyle() {
-        let normal = NSMutableAttributedString().normal(text)
-        XCTAssertEqual(self.normal(), normal)
-    }
-
+    
 }
