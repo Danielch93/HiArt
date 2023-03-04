@@ -8,6 +8,7 @@
 import UIKit
 
 class MainCoordinator: Coordinator {
+
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
 
@@ -30,4 +31,5 @@ class MainCoordinator: Coordinator {
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
+
 }

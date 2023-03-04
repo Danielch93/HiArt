@@ -9,9 +9,11 @@ import UIKit
 import EasyPeasy
 
 class RegisterView: BaseView {
+
     lazy var titleLabel: UILabel = {
         let label = UILabel()
-        label.titleText("Welcome to HiArt,", bold: true)
+        label.titleText("RG_TITLE".localized(),
+                        bold: true)
         label.textAlignment = .left
         label.textColor = .black
         return label
@@ -19,7 +21,7 @@ class RegisterView: BaseView {
 
     lazy var subtitleLabel: UILabel = {
         let label = UILabel()
-        label.subTitle("Please enter your information to register")
+        label.subTitle("RG_SUBTITLE".localized())
         label.numberOfLines = 0
         label.textAlignment = .left
         label.textColor = .black
@@ -36,7 +38,7 @@ class RegisterView: BaseView {
         textField.leftViewMode = .always
         textField.keyboardType = .alphabet
         textField.returnKeyType = .done
-        textField.placeholder = "Name"
+        textField.placeholder = "RG_FORM_NAME".localized()
         textField.layer.cornerRadius = 16
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -53,7 +55,7 @@ class RegisterView: BaseView {
         textField.leftViewMode = .always
         textField.keyboardType = .emailAddress
         textField.returnKeyType = .done
-        textField.placeholder = "Email"
+        textField.placeholder = "RG_FORM_EMAIL".localized()
         textField.layer.cornerRadius = 16
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -69,7 +71,7 @@ class RegisterView: BaseView {
         textField.leftView = view
         textField.leftViewMode = .always
         textField.keyboardType = .phonePad
-        textField.placeholder = "Phone"
+        textField.placeholder = "RG_FORM_CELLPHONE".localized()
         textField.layer.cornerRadius = 16
         textField.layer.borderWidth = 1
 
@@ -86,7 +88,7 @@ class RegisterView: BaseView {
         textField.leftView = view
         textField.leftViewMode = .always
         textField.isSecureTextEntry = true
-        textField.placeholder = "Password"
+        textField.placeholder = "RG_FORM_PASSWORD".localized()
         textField.layer.cornerRadius = 16
         textField.layer.borderWidth = 1
         textField.layer.borderColor = UIColor.lightGray.cgColor
@@ -95,7 +97,7 @@ class RegisterView: BaseView {
 
     lazy var registerButton: UIButton = {
         let button = UIButton()
-        button.boldText("Les't Go!")
+        button.boldText("RG_CONTINUE".localized())
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
         return button
@@ -130,9 +132,11 @@ class RegisterView: BaseView {
     @objc func pressButton() {
         print("Press register")
     }
+
 }
 
 extension RegisterView {
+
     override func buildHierarchy() {
         super.buildHierarchy()
         container.addArrangedSubviews([
@@ -175,16 +179,18 @@ extension RegisterView {
             Leading(30),
             Trailing(30)
         )
+
     }
 
     override func configureView() {
         super.configureView()
         container.distribution = .fill
+
     }
 
     override func setupEvents() {
         registerButton.addTarget(self,
-                              action: #selector(pressButton),
-                              for: .touchUpInside)
+                                 action: #selector(pressButton),
+                                 for: .touchUpInside)
     }
 }

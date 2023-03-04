@@ -10,13 +10,11 @@ import UIKit
 class OnboardingViewController: BaseViewController {
 
     // MARK: - Variable declaration
-
     private lazy var _view = OnboardingView()
     private var _nextPageContentOffset: CGFloat = 0
     var coordinator: MainCoordinator?
 
     // MARK: - Lyfe Cycle
-
     override func viewDidLoad() {
         super.viewDidLoad()
         setupDelegates()
@@ -34,12 +32,13 @@ class OnboardingViewController: BaseViewController {
             CGSize(width: _view.frame.size.width * CGFloat(3),
                    height: _view.onboardingScrollView.frame.size.height)
     }
+
 }
 
+// MARK: - Extension OnboardingViewController
 extension OnboardingViewController {
 
     // MARK: - Configuration methods
-
     func setupDelegates() {
         _view.delegate = self
         _view.onboardingScrollView.delegate = self
@@ -85,16 +84,16 @@ extension OnboardingViewController {
         let lastViewInDisplay = _view.frame.size.width * 2 ==
             _view.onboardingScrollView.contentOffset.x
 
-        _view.nextStepButton.boldText("Go!")
+        _view.nextStepButton.boldText("OB_PAGE_ONE_BUTTON_FINISH".localized())
         guard lastViewInDisplay else {
-            _view.nextStepButton.normalText("Next")
+            _view.nextStepButton.normalText("OB_PAGE_ONE_BUTTON_NEXT".localized())
             return
         }
     }
+
 }
 
 // MARK: - Extension UIScrollViewDelegate
-
 extension OnboardingViewController: UIScrollViewDelegate {
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         updateTextButton()
@@ -104,8 +103,8 @@ extension OnboardingViewController: UIScrollViewDelegate {
 }
 
 // MARK: - Extension OnboardingControllerProtocol
-
 extension OnboardingViewController: OnboardingControllerProtocol {
+
     func goToLogin() {
         coordinator?.showRegister()
     }
@@ -113,4 +112,5 @@ extension OnboardingViewController: OnboardingControllerProtocol {
     func nextStep() {
         configureNextStep()
     }
+
 }

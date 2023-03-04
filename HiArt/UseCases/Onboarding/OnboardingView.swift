@@ -9,6 +9,7 @@ import UIKit
 import EasyPeasy
 
 class OnboardingView: BaseView {
+
     var delegate: OnboardingControllerProtocol!
 
     lazy var containerView: UIStackView = {
@@ -37,7 +38,7 @@ class OnboardingView: BaseView {
 
     lazy var nextStepButton: UIButton = {
         let button = UIButton()
-        button.normalText("Next")
+        button.normalText("OB_PAGE_ONE_BUTTON_NEXT".localized())
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = .systemBlue
         button.layer.cornerRadius = 16
@@ -77,9 +78,11 @@ class OnboardingView: BaseView {
     @objc func nextStepOnboarding() {
         delegate?.nextStep()
     }
+
 }
 
 extension OnboardingView {
+
     override func buildHierarchy() {
         containerView.addArrangedSubviews([
             onboardingScrollView,
@@ -132,4 +135,5 @@ extension OnboardingView {
                                  action: #selector(nextStepOnboarding),
                                  for: .touchUpInside)
     }
+
 }

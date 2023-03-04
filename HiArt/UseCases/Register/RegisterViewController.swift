@@ -8,6 +8,7 @@
 import UIKit
 
 class RegisterViewController: BaseViewController {
+
     private lazy var _view = RegisterView()
     var coordinator: MainCoordinator?
 
@@ -22,6 +23,7 @@ class RegisterViewController: BaseViewController {
 }
 
 extension RegisterViewController {
+
     func setupDelegates() {
         _view.nameTextField.delegate = self
         _view.emailTextField.delegate = self
@@ -35,11 +37,14 @@ extension RegisterViewController {
     @objc func dismissKeyboard() {
         self._view.endEditing(true)
     }
+
 }
 
 extension RegisterViewController: UITextFieldDelegate {
+
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self._view.endEditing(true)
         return true
     }
+
 }
