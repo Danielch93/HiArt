@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+extension Int {
+
+    enum Font {
+        static let title = 34
+        static let subTitle = 22
+        static let body = 17
+    }
+
+}

@@ -1,0 +1,26 @@
+/* 
+  Localizable.strings
+  HiArt
+
+  Created by Daniel Charry on 4/03/23.
+  
+*/
+
+// App
+"APP_NAME" = "HiArt";
+"APP_CREATOR" = "HiArt created by %@";
+"APP_LANGUAGE" = "HiArt, language support: %@ and %@";
+
+// Onboarding
+"OB_PAGE_ONE_SUBTITLE" = "";
+"OB_PAGE_ONE_BUTTON_NEXT" = "Next";
+"OB_PAGE_ONE_BUTTON_FINISH" = "¡Got it!";
+
+// Register
+"RG_TITLE" = "Welcome to HiArt,";
+"RG_SUBTITLE" = "Enter your information to register";
+"RG_FORM_NAME" = "Full name";
+"RG_FORM_EMAIL" = "Email";
+"RG_FORM_CELLPHONE" = "Cellphone";
+"RG_FORM_PASSWORD" = "Password";
+"RG_CONTINUE" = "Create account";
