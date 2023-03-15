@@ -33,6 +33,12 @@ class OnboardingViewController: BaseViewController {
                    height: _view.onboardingScrollView.frame.size.height)
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tagViewController(sectionName: sectionNameTag.onboarding,
+                          fileName: self.getViewControllerName(),
+                          action: actionTag.viewAppear)
+    }
+
 }
 
 // MARK: - Extension OnboardingViewController
@@ -73,7 +79,7 @@ extension OnboardingViewController {
                 self._view.onboardingPageControl.currentPage += 1
             }
         } else {
-            coordinator?.showRegister()
+            self.goToLogin()
         }
 
         updateTextButton()
@@ -107,10 +113,18 @@ extension OnboardingViewController: OnboardingControllerProtocol {
 
     func goToLogin() {
         coordinator?.showRegister()
+        tagButton(sectionName: sectionNameTag.onboarding,
+                  elementName: "OB_PAGE_ONE_BUTTON_FINISH".localized(),
+                  fileName: self.getViewControllerName(),
+                  action: actionTag.pressButton)
     }
 
     func nextStep() {
         configureNextStep()
+        tagButton(sectionName: sectionNameTag.onboarding,
+                  elementName: "OB_PAGE_ONE_BUTTON_NEXT".localized(),
+                  fileName: self.getViewControllerName(),
+                  action: actionTag.pressButton)
     }
 
 }

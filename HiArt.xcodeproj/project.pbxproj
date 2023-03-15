@@ -17,6 +17,8 @@
 		6521C12E27CC863300952542 /* HiArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C12D27CC863300952542 /* HiArtUITests.swift */; };
 		6529383529B3A69D0070BFEF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6529383729B3A69D0070BFEF /* Localizable.strings */; };
 		6529384A29B3AC2A0070BFEF /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6529384929B3AC2A0070BFEF /* String.swift */; };
+		652E753229BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */; };
+		652E753B29BCD37400A19601 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */; };
 		65351713292DC4AE003C542E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65351712292DC4AE003C542E /* StringTests.swift */; };
 		655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D4294BF2BB0001EE11 /* Label.swift */; };
 		655AF4DA294C03900001EE11 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D9294C03900001EE11 /* Button.swift */; };
@@ -61,6 +63,7 @@
 		65F2587F29B98B9A00A69CD0 /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2587E29B98B9A00A69CD0 /* FirebaseRemoteConfig */; };
 		65F2588129B98B9A00A69CD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588029B98B9A00A69CD0 /* FirebaseCrashlytics */; };
 		65F2588329B98B9A00A69CD0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588229B98B9A00A69CD0 /* FirebaseDatabase */; };
+		65FD0F1329C002820019962B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD0F1229C002820019962B /* ViewController.swift */; };
 		A720D965ABB993B9A6CA82D9 /* libPods-HiArt-HiArtUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A89CAB750CE226711A9D823 /* libPods-HiArt-HiArtUITests.a */; };
 /* End PBXBuildFile section */
 
@@ -104,6 +107,8 @@
 		6529383629B3A69D0070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383F29B3A9870070BFEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6529384929B3AC2A0070BFEF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalyticsProtocol.swift; path = Firebase/Analytics/FirebaseAnalyticsProtocol.swift; sourceTree = SOURCE_ROOT; };
+		652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalytics.swift; path = Firebase/Analytics/FirebaseAnalytics.swift; sourceTree = SOURCE_ROOT; };
 		65351712292DC4AE003C542E /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		655AF4D4294BF2BB0001EE11 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		655AF4D9294C03900001EE11 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
@@ -130,6 +135,7 @@
 		65BCB4D927CF0CAD00390E0B /* ViewConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurationProtocol.swift; sourceTree = "<group>"; };
 		65BCB4DE27CF0DF900390E0B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		65FD0F1229C002820019962B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67A508AC7CD526491A5EDFE0 /* libPods-HiArtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68323EE185C97225DD84159E /* Pods-HiArt-HiArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A967231204BAA8D6E3D5B81E /* Pods-HiArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.release.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.release.xcconfig"; sourceTree = "<group>"; };
@@ -239,6 +245,15 @@
 				6521C12F27CC863300952542 /* Info.plist */,
 			);
 			path = HiArtUITests;
+			sourceTree = "<group>";
+		};
+		652E753929BCD34A00A19601 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */,
+				652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */,
+			);
+			path = Analytics;
 			sourceTree = "<group>";
 		};
 		6535170E292DC2EF003C542E /* Model */ = {
@@ -416,6 +431,7 @@
 		65B9FF6227CD79D500BA459B /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				652E753929BCD34A00A19601 /* Analytics */,
 			);
 			path = Firebase;
 			sourceTree = "<group>";
@@ -440,6 +456,7 @@
 				655AF4D9294C03900001EE11 /* Button.swift */,
 				655AF4E6294C0C500001EE11 /* Font.swift */,
 				6529384929B3AC2A0070BFEF /* String.swift */,
+				65FD0F1229C002820019962B /* ViewController.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -776,11 +793,13 @@
 			files = (
 				65B9FF5C27CD793B00BA459B /* Session.swift in Sources */,
 				65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */,
+				652E753229BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift in Sources */,
 				65BCB4DA27CF0CAD00390E0B /* ViewConfigurationProtocol.swift in Sources */,
 				655AF4E7294C0C500001EE11 /* Font.swift in Sources */,
 				65BCB4D527CF09AB00390E0B /* BaseView.swift in Sources */,
 				65B9FFA327CDC5B600BA459B /* RegisterViewController.swift in Sources */,
 				655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */,
+				65FD0F1329C002820019962B /* ViewController.swift in Sources */,
 				65BCB4DF27CF0DF900390E0B /* View.swift in Sources */,
 				65B9FF6427CD79E900BA459B /* UserDefaultsProvider.swift in Sources */,
 				65BCB4B427CEB62F00390E0B /* SceneDelegate.swift in Sources */,
@@ -795,6 +814,7 @@
 				65BCB4CF27CF094200390E0B /* BaseViewController.swift in Sources */,
 				65B9FF6E27CD7AC300BA459B /* Constants.swift in Sources */,
 				65BCB4C927CF087600390E0B /* OnboardingControllerProtocol.swift in Sources */,
+				652E753B29BCD37400A19601 /* FirebaseAnalytics.swift in Sources */,
 				6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */,
 				655AF4DA294C03900001EE11 /* Button.swift in Sources */,
 			);
