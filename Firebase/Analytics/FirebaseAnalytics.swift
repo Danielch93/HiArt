@@ -35,7 +35,7 @@ struct FirebaseAnalyticsCustomKey {
     let AnalyticsParameterAction = "action"
 }
 
-extension FirebaseAnalytics: FirebaseAnalyticsProtocol {
+extension FirebaseAnalytics: FirebaseAnalyticsDelegate {
 
     func tagViewController(_ viewName: String, _ fileName: String, _ action: String) {
         Analytics.logEvent(AnalyticsEventScreenView, parameters: [
