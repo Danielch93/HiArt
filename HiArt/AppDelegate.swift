@@ -15,6 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions
                         launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+
+        // Setup
+        setupSDK()
+        setupServer()
+        setupUI()
+
+        return true
+    }
+
+    private func setupServer() {
+        ServerConfiguration.shared.setupServerConfig()
+    }
+
+    private func setupSDK() {
+        FirebaseApp.configure()
+    }
+
+    private func setupUI() {
         let navController = UINavigationController()
         let coordinator = MainCoordinator(navigationController: navController)
         coordinator.start()
@@ -22,10 +40,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = coordinator.navigationController
         window?.makeKeyAndVisible()
-
-        FirebaseApp.configure()
-
-        return true
     }
 
     // MARK: UISceneSession Lifecycle
