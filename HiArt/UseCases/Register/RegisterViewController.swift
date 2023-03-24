@@ -25,6 +25,7 @@ class RegisterViewController: BaseViewController {
 extension RegisterViewController {
 
     func setupDelegates() {
+        _view.delegate = self
         _view.nameTextField.delegate = self
         _view.emailTextField.delegate = self
         _view.phoneTextField.delegate = self
@@ -47,4 +48,8 @@ extension RegisterViewController: UITextFieldDelegate {
         return true
     }
 
+}
+
+extension RegisterViewController: RegisterViewControllerProtocol {
+    func registerUser() { }
 }

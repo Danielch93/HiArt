@@ -10,6 +10,8 @@ import EasyPeasy
 
 class RegisterView: BaseView {
 
+    var delegate: RegisterViewControllerProtocol!
+
     lazy var titleLabel: UILabel = {
         let label = UILabel()
         label.titleText("RG_TITLE".localized(),
@@ -129,8 +131,8 @@ class RegisterView: BaseView {
         return view
     }()
 
-    @objc func pressButton() {
-        print("Press register")
+    @objc func registerUser() {
+        delegate?.registerUser()
     }
 
 }
@@ -190,7 +192,7 @@ extension RegisterView {
 
     override func setupEvents() {
         registerButton.addTarget(self,
-                                 action: #selector(pressButton),
+                                 action: #selector(registerUser),
                                  for: .touchUpInside)
     }
 }
