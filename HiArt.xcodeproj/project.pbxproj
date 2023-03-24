@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B86AFA5765783504D0227AE /* libPods-HiArtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 67A508AC7CD526491A5EDFE0 /* libPods-HiArtTests.a */; };
-		62B61E26B3DB9DC8D27DD709 /* libPods-HiArt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45E298D5AD2BC9FABD8C4C86 /* libPods-HiArt.a */; };
+		651FA4AB29CD464200CF946F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4AA29CD464200CF946F /* LoginView.swift */; };
+		651FA4B029CD465000CF946F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4AF29CD465000CF946F /* LoginViewController.swift */; };
+		651FA4B529CD466500CF946F /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4B429CD466500CF946F /* LoginViewControllerProtocol.swift */; };
 		6521C10C27CC863100952542 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6521C10B27CC863100952542 /* AppDelegate.swift */; };
 		6521C11327CC863100952542 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6521C11127CC863100952542 /* Main.storyboard */; };
 		6521C11527CC863300952542 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6521C11427CC863300952542 /* Assets.xcassets */; };
@@ -27,7 +28,10 @@
 		657739A827D16E420010FCC9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 657739A727D16E420010FCC9 /* Alamofire */; };
 		658DEEC7294C163100F45BC9 /* FontTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DEEC6294C163100F45BC9 /* FontTests.swift */; };
 		658DEECC294C191B00F45BC9 /* ButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DEECB294C191B00F45BC9 /* ButtonTests.swift */; };
+		658DF85C29C7D404000691BA /* FirebaseUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DF85B29C7D404000691BA /* FirebaseUserManager.swift */; };
+		658DF86429C95D29000691BA /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658DF86329C95D29000691BA /* FirebaseManager.swift */; };
 		6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6597A39127D1A3AC00AA7365 /* StackView.swift */; };
+		65A3558C29CBD0F60011F9A2 /* ServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A3558B29CBD0F60011F9A2 /* ServerConfiguration.swift */; };
 		65B9FF4B27CD77D000BA459B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */; };
 		65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF4F27CD77E100BA459B /* OnboardingViewModel.swift */; };
 		65B9FF5C27CD793B00BA459B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9FF5B27CD793B00BA459B /* Session.swift */; };
@@ -45,6 +49,8 @@
 		65BCB4D527CF09AB00390E0B /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCB4D427CF09AB00390E0B /* BaseView.swift */; };
 		65BCB4DA27CF0CAD00390E0B /* ViewConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCB4D927CF0CAD00390E0B /* ViewConfigurationProtocol.swift */; };
 		65BCB4DF27CF0DF900390E0B /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BCB4DE27CF0DF900390E0B /* View.swift */; };
+		65BDC33829C2B20400A57858 /* FirebaseAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDC33729C2B20400A57858 /* FirebaseAuth.swift */; };
+		65BDC34829C2BD6800A57858 /* RegisterViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BDC34729C2BD6800A57858 /* RegisterViewControllerProtocol.swift */; };
 		65F2585929B97DF700A69CD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */; };
 		65F2585D29B97E0F00A69CD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */; };
 		65F2586129B97E0F00A69CD0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */; };
@@ -64,7 +70,6 @@
 		65F2588129B98B9A00A69CD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588029B98B9A00A69CD0 /* FirebaseCrashlytics */; };
 		65F2588329B98B9A00A69CD0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588229B98B9A00A69CD0 /* FirebaseDatabase */; };
 		65FD0F1329C002820019962B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD0F1229C002820019962B /* ViewController.swift */; };
-		A720D965ABB993B9A6CA82D9 /* libPods-HiArt-HiArtUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A89CAB750CE226711A9D823 /* libPods-HiArt-HiArtUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,10 +91,11 @@
 
 /* Begin PBXFileReference section */
 		047EC4C974D4EEBE4DC511C9 /* Pods-HiArt-HiArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.release.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.release.xcconfig"; sourceTree = "<group>"; };
-		2A89CAB750CE226711A9D823 /* libPods-HiArt-HiArtUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArt-HiArtUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		45E298D5AD2BC9FABD8C4C86 /* libPods-HiArt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6B0CA8A8480EDDD6590690 /* Pods-HiArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.debug.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		527C517C059ED95D94E8E5AB /* Pods-HiArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.debug.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.debug.xcconfig"; sourceTree = "<group>"; };
+		651FA4AA29CD464200CF946F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		651FA4AF29CD465000CF946F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		651FA4B429CD466500CF946F /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
 		6521C10827CC863100952542 /* HiArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HiArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6521C10B27CC863100952542 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6521C11227CC863100952542 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,7 +109,7 @@
 		6521C12D27CC863300952542 /* HiArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiArtUITests.swift; sourceTree = "<group>"; };
 		6521C12F27CC863300952542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6529382829B3A5B20070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
-		6529382C29B3A5B30070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Main.strings"; sourceTree = "<group>"; };
+		6529382C29B3A5B30070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "../Util/es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383629B3A69D0070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383F29B3A9870070BFEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6529384929B3AC2A0070BFEF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -116,7 +122,10 @@
 		655AF4EC294C12F50001EE11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		658DEEC6294C163100F45BC9 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
 		658DEECB294C191B00F45BC9 /* ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTests.swift; sourceTree = "<group>"; };
+		658DF85B29C7D404000691BA /* FirebaseUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseUserManager.swift; path = Firebase/Users/FirebaseUserManager.swift; sourceTree = SOURCE_ROOT; };
+		658DF86329C95D29000691BA /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = Firebase/FirebaseManager.swift; sourceTree = SOURCE_ROOT; };
 		6597A39127D1A3AC00AA7365 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
+		65A3558B29CBD0F60011F9A2 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
 		65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		65B9FF4F27CD77E100BA459B /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		65B9FF5B27CD793B00BA459B /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -134,9 +143,10 @@
 		65BCB4D427CF09AB00390E0B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		65BCB4D927CF0CAD00390E0B /* ViewConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurationProtocol.swift; sourceTree = "<group>"; };
 		65BCB4DE27CF0DF900390E0B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		65BDC33729C2B20400A57858 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAuth.swift; path = Firebase/Authentication/FirebaseAuth.swift; sourceTree = SOURCE_ROOT; };
+		65BDC34729C2BD6800A57858 /* RegisterViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerProtocol.swift; sourceTree = "<group>"; };
 		65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65FD0F1229C002820019962B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		67A508AC7CD526491A5EDFE0 /* libPods-HiArtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68323EE185C97225DD84159E /* Pods-HiArt-HiArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A967231204BAA8D6E3D5B81E /* Pods-HiArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.release.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.release.xcconfig"; sourceTree = "<group>"; };
 		E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.release.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,7 +161,6 @@
 				65F2587D29B98B9A00A69CD0 /* FirebaseFunctions in Frameworks */,
 				65F2586929B98B9A00A69CD0 /* FirebaseMessaging in Frameworks */,
 				65F2587729B98B9A00A69CD0 /* FirebaseDynamicLinks in Frameworks */,
-				62B61E26B3DB9DC8D27DD709 /* libPods-HiArt.a in Frameworks */,
 				65F2586F29B98B9A00A69CD0 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				657739A827D16E420010FCC9 /* Alamofire in Frameworks */,
 				65F2588329B98B9A00A69CD0 /* FirebaseDatabase in Frameworks */,
@@ -171,7 +180,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B86AFA5765783504D0227AE /* libPods-HiArtTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,23 +187,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A720D965ABB993B9A6CA82D9 /* libPods-HiArt-HiArtUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		651FA4A929CD462A00CF946F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				651FA4AA29CD464200CF946F /* LoginView.swift */,
+				651FA4AF29CD465000CF946F /* LoginViewController.swift */,
+				651FA4B429CD466500CF946F /* LoginViewControllerProtocol.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		6521C0FF27CC863100952542 = {
 			isa = PBXGroup;
 			children = (
-				6529383729B3A69D0070BFEF /* Localizable.strings */,
 				6521C10A27CC863100952542 /* HiArt */,
 				6521C12127CC863300952542 /* HiArtTests */,
 				6521C12C27CC863300952542 /* HiArtUITests */,
 				6521C10927CC863100952542 /* Products */,
 				C4E0C6DE13288DA1A666C7A1 /* Pods */,
-				CAF75E396C624C0DF5EE6A84 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,15 +227,14 @@
 		6521C10A27CC863100952542 /* HiArt */ = {
 			isa = PBXGroup;
 			children = (
-				65B9FF4027CD765100BA459B /* UseCases */,
-				65B9FF3E27CD75DA00BA459B /* Model */,
-				65B9FF3F27CD75E500BA459B /* Provider */,
-				65B9FF6B27CD7A7300BA459B /* Util */,
-				65BCB4C127CF011100390E0B /* Resources */,
-				65B9FF8127CD7B3100BA459B /* SupportingFiles */,
 				6521C10B27CC863100952542 /* AppDelegate.swift */,
 				65BCB4B327CEB62F00390E0B /* SceneDelegate.swift */,
-				6521C11127CC863100952542 /* Main.storyboard */,
+				65B9FF4027CD765100BA459B /* UseCases */,
+				65B9FF3E27CD75DA00BA459B /* Model */,
+				65A3558A29CBD0A20011F9A2 /* Server */,
+				65B9FF3F27CD75E500BA459B /* Provider */,
+				65B9FF6B27CD7A7300BA459B /* Util */,
+				65B9FF8127CD7B3100BA459B /* SupportingFiles */,
 				6521C11427CC863300952542 /* Assets.xcassets */,
 			);
 			path = HiArt;
@@ -250,8 +264,8 @@
 		652E753929BCD34A00A19601 /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */,
 				652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */,
+				652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -297,6 +311,14 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		658DF85A29C7D2EA000691BA /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				658DF85B29C7D404000691BA /* FirebaseUserManager.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
 		6596174F27D1A0EC00043B27 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -304,6 +326,14 @@
 				65B9FF9527CDA6A300BA459B /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		65A3558A29CBD0A20011F9A2 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				65A3558B29CBD0F60011F9A2 /* ServerConfiguration.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		65B9FF3E27CD75DA00BA459B /* Model */ = {
@@ -326,6 +356,7 @@
 		65B9FF4027CD765100BA459B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				651FA4A929CD462A00CF946F /* Login */,
 				65B9FF4827CD76D800BA459B /* Lunch */,
 				65B9FF4227CD766D00BA459B /* Onboarding */,
 				65B9FF4327CD768200BA459B /* Register */,
@@ -358,8 +389,9 @@
 		65B9FF4327CD768200BA459B /* Register */ = {
 			isa = PBXGroup;
 			children = (
-				65B9FFA227CDC5B600BA459B /* RegisterViewController.swift */,
 				65B9FFA727CDC5BF00BA459B /* RegisterView.swift */,
+				65B9FFA227CDC5B600BA459B /* RegisterViewController.swift */,
+				65BDC34729C2BD6800A57858 /* RegisterViewControllerProtocol.swift */,
 			);
 			path = Register;
 			sourceTree = "<group>";
@@ -431,6 +463,9 @@
 		65B9FF6227CD79D500BA459B /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
+				658DF86329C95D29000691BA /* FirebaseManager.swift */,
+				658DF85A29C7D2EA000691BA /* Users */,
+				65BDC33629C2B1A900A57858 /* Authentication */,
 				652E753929BCD34A00A19601 /* Analytics */,
 			);
 			path = Firebase;
@@ -439,6 +474,7 @@
 		65B9FF6B27CD7A7300BA459B /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				6529383729B3A69D0070BFEF /* Localizable.strings */,
 				65B9FF6D27CD7AC300BA459B /* Constants.swift */,
 				65B9FF7227CD7AD800BA459B /* UIConstants.swift */,
 				65B9FF8027CD7B1200BA459B /* Style */,
@@ -471,17 +507,11 @@
 		65B9FF8127CD7B3100BA459B /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				6521C11127CC863100952542 /* Main.storyboard */,
 				65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */,
 				6521C11927CC863300952542 /* Info.plist */,
 			);
 			path = SupportingFiles;
-			sourceTree = "<group>";
-		};
-		65BCB4C127CF011100390E0B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		65BCB4CD27CF090000390E0B /* BaseViewController */ = {
@@ -501,6 +531,14 @@
 			path = BaseView;
 			sourceTree = "<group>";
 		};
+		65BDC33629C2B1A900A57858 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				65BDC33729C2B20400A57858 /* FirebaseAuth.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		C4E0C6DE13288DA1A666C7A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -512,16 +550,6 @@
 				E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		CAF75E396C624C0DF5EE6A84 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				45E298D5AD2BC9FABD8C4C86 /* libPods-HiArt.a */,
-				2A89CAB750CE226711A9D823 /* libPods-HiArt-HiArtUITests.a */,
-				67A508AC7CD526491A5EDFE0 /* libPods-HiArtTests.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -791,14 +819,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65BDC33829C2B20400A57858 /* FirebaseAuth.swift in Sources */,
 				65B9FF5C27CD793B00BA459B /* Session.swift in Sources */,
 				65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */,
 				652E753229BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift in Sources */,
+				65A3558C29CBD0F60011F9A2 /* ServerConfiguration.swift in Sources */,
 				65BCB4DA27CF0CAD00390E0B /* ViewConfigurationProtocol.swift in Sources */,
 				655AF4E7294C0C500001EE11 /* Font.swift in Sources */,
 				65BCB4D527CF09AB00390E0B /* BaseView.swift in Sources */,
+				651FA4B529CD466500CF946F /* LoginViewControllerProtocol.swift in Sources */,
 				65B9FFA327CDC5B600BA459B /* RegisterViewController.swift in Sources */,
 				655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */,
+				658DF86429C95D29000691BA /* FirebaseManager.swift in Sources */,
+				658DF85C29C7D404000691BA /* FirebaseUserManager.swift in Sources */,
 				65FD0F1329C002820019962B /* ViewController.swift in Sources */,
 				65BCB4DF27CF0DF900390E0B /* View.swift in Sources */,
 				65B9FF6427CD79E900BA459B /* UserDefaultsProvider.swift in Sources */,
@@ -810,11 +843,14 @@
 				65B9FF9627CDA6A300BA459B /* MainCoordinator.swift in Sources */,
 				6529384A29B3AC2A0070BFEF /* String.swift in Sources */,
 				65B9FF9B27CDA9CF00BA459B /* OnboardingViewController.swift in Sources */,
+				65BDC34829C2BD6800A57858 /* RegisterViewControllerProtocol.swift in Sources */,
 				65B9FFA827CDC5BF00BA459B /* RegisterView.swift in Sources */,
 				65BCB4CF27CF094200390E0B /* BaseViewController.swift in Sources */,
 				65B9FF6E27CD7AC300BA459B /* Constants.swift in Sources */,
 				65BCB4C927CF087600390E0B /* OnboardingControllerProtocol.swift in Sources */,
 				652E753B29BCD37400A19601 /* FirebaseAnalytics.swift in Sources */,
+				651FA4B029CD465000CF946F /* LoginViewController.swift in Sources */,
+				651FA4AB29CD464200CF946F /* LoginView.swift in Sources */,
 				6597A39227D1A3AC00AA7365 /* StackView.swift in Sources */,
 				655AF4DA294C03900001EE11 /* Button.swift in Sources */,
 			);
@@ -1043,6 +1079,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = RELEASE;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1136,6 +1173,258 @@
 			};
 			name = Release;
 		};
+		652CFA1729CA93DC00C9AA21 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Develop;
+		};
+		652CFA1829CA93DC00C9AA21 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 527C517C059ED95D94E8E5AB /* Pods-HiArt.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEV;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Develop;
+		};
+		652CFA1929CA93DC00C9AA21 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D6B0CA8A8480EDDD6590690 /* Pods-HiArtTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArtTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiArt.app/HiArt";
+			};
+			name = Develop;
+		};
+		652CFA1A29CA93DC00C9AA21 /* Develop */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68323EE185C97225DD84159E /* Pods-HiArt-HiArtUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArtUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiArt;
+			};
+			name = Develop;
+		};
+		652CFA1B29CA93F900C9AA21 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Prod;
+		};
+		652CFA1C29CA93F900C9AA21 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A967231204BAA8D6E3D5B81E /* Pods-HiArt.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = PROD;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Prod;
+		};
+		652CFA1D29CA93F900C9AA21 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArtTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HiArt.app/HiArt";
+			};
+			name = Prod;
+		};
+		652CFA1E29CA93F900C9AA21 /* Prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 047EC4C974D4EEBE4DC511C9 /* Pods-HiArt-HiArtUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZLFQG83687;
+				INFOPLIST_FILE = HiArtUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.danielch.HiArtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HiArt;
+			};
+			name = Prod;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1143,7 +1432,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6521C13027CC863300952542 /* Debug */,
+				652CFA1729CA93DC00C9AA21 /* Develop */,
 				6521C13127CC863300952542 /* Release */,
+				652CFA1B29CA93F900C9AA21 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1152,7 +1443,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6521C13327CC863300952542 /* Debug */,
+				652CFA1829CA93DC00C9AA21 /* Develop */,
 				6521C13427CC863300952542 /* Release */,
+				652CFA1C29CA93F900C9AA21 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1161,7 +1454,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6521C13627CC863300952542 /* Debug */,
+				652CFA1929CA93DC00C9AA21 /* Develop */,
 				6521C13727CC863300952542 /* Release */,
+				652CFA1D29CA93F900C9AA21 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1170,7 +1465,9 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6521C13927CC863300952542 /* Debug */,
+				652CFA1A29CA93DC00C9AA21 /* Develop */,
 				6521C13A27CC863300952542 /* Release */,
+				652CFA1E29CA93F900C9AA21 /* Prod */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
