@@ -21,6 +21,9 @@
 		652E753229BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */; };
 		652E753B29BCD37400A19601 /* FirebaseAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */; };
 		65351713292DC4AE003C542E /* StringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65351712292DC4AE003C542E /* StringTests.swift */; };
+		654A53D229D0F945007C29D1 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A53D129D0F945007C29D1 /* ProfileView.swift */; };
+		654A53D729D0F956007C29D1 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A53D629D0F956007C29D1 /* ProfileViewController.swift */; };
+		654A53DC29D0F969007C29D1 /* ProfileViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 654A53DB29D0F969007C29D1 /* ProfileViewControllerProtocol.swift */; };
 		655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D4294BF2BB0001EE11 /* Label.swift */; };
 		655AF4DA294C03900001EE11 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4D9294C03900001EE11 /* Button.swift */; };
 		655AF4E7294C0C500001EE11 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655AF4E6294C0C500001EE11 /* Font.swift */; };
@@ -116,6 +119,9 @@
 		652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalyticsProtocol.swift; path = Firebase/Analytics/FirebaseAnalyticsProtocol.swift; sourceTree = SOURCE_ROOT; };
 		652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalytics.swift; path = Firebase/Analytics/FirebaseAnalytics.swift; sourceTree = SOURCE_ROOT; };
 		65351712292DC4AE003C542E /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
+		654A53D129D0F945007C29D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		654A53D629D0F956007C29D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		654A53DB29D0F969007C29D1 /* ProfileViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewControllerProtocol.swift; sourceTree = "<group>"; };
 		655AF4D4294BF2BB0001EE11 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
 		655AF4D9294C03900001EE11 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		655AF4E6294C0C500001EE11 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
@@ -302,6 +308,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		654A53D029D0F91C007C29D1 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				654A53D129D0F945007C29D1 /* ProfileView.swift */,
+				654A53D629D0F956007C29D1 /* ProfileViewController.swift */,
+				654A53DB29D0F969007C29D1 /* ProfileViewControllerProtocol.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		655AF4EB294C12E00001EE11 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				651FA4A929CD462A00CF946F /* Login */,
+				654A53D029D0F91C007C29D1 /* Profile */,
 				65B9FF4827CD76D800BA459B /* Lunch */,
 				65B9FF4227CD766D00BA459B /* Onboarding */,
 				65B9FF4327CD768200BA459B /* Register */,
@@ -823,14 +840,17 @@
 				65B9FF5C27CD793B00BA459B /* Session.swift in Sources */,
 				65B9FF5027CD77E100BA459B /* OnboardingViewModel.swift in Sources */,
 				652E753229BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift in Sources */,
+				654A53DC29D0F969007C29D1 /* ProfileViewControllerProtocol.swift in Sources */,
 				65A3558C29CBD0F60011F9A2 /* ServerConfiguration.swift in Sources */,
 				65BCB4DA27CF0CAD00390E0B /* ViewConfigurationProtocol.swift in Sources */,
+				654A53D729D0F956007C29D1 /* ProfileViewController.swift in Sources */,
 				655AF4E7294C0C500001EE11 /* Font.swift in Sources */,
 				65BCB4D527CF09AB00390E0B /* BaseView.swift in Sources */,
 				651FA4B529CD466500CF946F /* LoginViewControllerProtocol.swift in Sources */,
 				65B9FFA327CDC5B600BA459B /* RegisterViewController.swift in Sources */,
 				655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */,
 				658DF86429C95D29000691BA /* FirebaseManager.swift in Sources */,
+				654A53D229D0F945007C29D1 /* ProfileView.swift in Sources */,
 				658DF85C29C7D404000691BA /* FirebaseUserManager.swift in Sources */,
 				65FD0F1329C002820019962B /* ViewController.swift in Sources */,
 				65BCB4DF27CF0DF900390E0B /* View.swift in Sources */,

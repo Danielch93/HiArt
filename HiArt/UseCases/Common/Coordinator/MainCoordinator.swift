@@ -17,7 +17,19 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        showOnboarding()
+        showLogin()
+    }
+
+    func showOnboarding() {
+        let viewController = OnboardingViewController()
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: false)
+    }
+
+    func showLogin() {
+        let viewController = LoginViewController()
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: false)
     }
 
     func showRegister() {
@@ -26,8 +38,8 @@ class MainCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: false)
     }
 
-    func showOnboarding() {
-        let viewController = OnboardingViewController()
+    func showProfile() {
+        let viewController = ProfileViewController()
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }

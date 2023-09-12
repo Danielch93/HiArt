@@ -175,6 +175,7 @@ extension RegisterView {
         )
 
         viewLabels.easy.layout(Height(150))
+
         viewTextfields.easy.layout(
             Height(280),
             Top(0).to(viewLabels),
