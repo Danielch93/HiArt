@@ -4,6 +4,7 @@ project 'HiArt.xcodeproj'
 
 target 'HiArt' do
     pod "EasyPeasy"
+    pod "SwiftLint"
 
   target 'HiArtTests' do
     inherit! :search_paths

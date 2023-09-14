@@ -19,8 +19,8 @@ class FirebaseAuth: UIViewController {
 extension FirebaseAuth {
     func signIn() {
         auth.signIn(withEmail: "daniel@gmail.com",
-                    password: "daniel123") { [weak self] (result, error) in
-            guard let self = self else { return }
+                    password: "daniel123") { [weak self] (_, _) in
+            guard self != nil else { return }
             print("Login success!")
         }
     }
