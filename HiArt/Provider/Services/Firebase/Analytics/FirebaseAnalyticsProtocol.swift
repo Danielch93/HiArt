@@ -5,7 +5,7 @@
 //  Created by Daniel Charry on 11/03/23.
 //
 
-protocol FirebaseAnalyticsDelegate {
+protocol FirebaseAnalyticsDelegate: AnyObject {
 
     func tagViewController(_ sectionName: String,
                            _ fileName: String,

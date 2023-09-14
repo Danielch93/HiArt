@@ -10,7 +10,7 @@ import FirebaseAuth
 
 struct FirebaseUserManager {
     static func createUser() {
-        Auth.auth().createUser(withEmail: "daniel@correo.com", password: "123456") { (result, error) in
+        Auth.auth().createUser(withEmail: "daniel@correo.com", password: "123456") { (_, _) in
             print("User created")
         }
     }

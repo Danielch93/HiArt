@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B44676D20A2AEFE5A2C01FD /* libPods-HiArt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C9BB13FB00B0D94351FF8FF4 /* libPods-HiArt.a */; };
 		651FA4AB29CD464200CF946F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4AA29CD464200CF946F /* LoginView.swift */; };
 		651FA4B029CD465000CF946F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4AF29CD465000CF946F /* LoginViewController.swift */; };
 		651FA4B529CD466500CF946F /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651FA4B429CD466500CF946F /* LoginViewControllerProtocol.swift */; };
@@ -73,6 +74,10 @@
 		65F2588129B98B9A00A69CD0 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588029B98B9A00A69CD0 /* FirebaseCrashlytics */; };
 		65F2588329B98B9A00A69CD0 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 65F2588229B98B9A00A69CD0 /* FirebaseDatabase */; };
 		65FD0F1329C002820019962B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65FD0F1229C002820019962B /* ViewController.swift */; };
+		90E52D2497FEE54A05579D36 /* libPods-HiArtTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE948BB7B204A05C8CE74DA /* libPods-HiArtTests.a */; };
+		DD7DAD632AB1782600D826FD /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DAD622AB1782600D826FD /* DummyViewController.swift */; };
+		DD7DAD652AB1786A00D826FD /* DummyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7DAD642AB1786A00D826FD /* DummyView.swift */; };
+		ED4BA9F5B6F11D1A06F053F9 /* libPods-HiArt-HiArtUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F5EFF2DAC957E3B6CA6A465 /* libPods-HiArt-HiArtUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +99,12 @@
 
 /* Begin PBXFileReference section */
 		047EC4C974D4EEBE4DC511C9 /* Pods-HiArt-HiArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.release.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0F5EFF2DAC957E3B6CA6A465 /* libPods-HiArt-HiArtUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArt-HiArtUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B08C67570CCD5A7970002F /* Pods-HiArtTests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.prod.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.prod.xcconfig"; sourceTree = "<group>"; };
+		304D25AE33E5CCB7E93E1D5B /* Pods-HiArt.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.prod.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.prod.xcconfig"; sourceTree = "<group>"; };
 		4D6B0CA8A8480EDDD6590690 /* Pods-HiArtTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.debug.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.debug.xcconfig"; sourceTree = "<group>"; };
 		527C517C059ED95D94E8E5AB /* Pods-HiArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.debug.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.debug.xcconfig"; sourceTree = "<group>"; };
+		5A7B90A01ADE7D910DBBE424 /* Pods-HiArtTests.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.develop.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.develop.xcconfig"; sourceTree = "<group>"; };
 		651FA4AA29CD464200CF946F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		651FA4AF29CD465000CF946F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		651FA4B429CD466500CF946F /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
@@ -116,8 +125,8 @@
 		6529383629B3A69D0070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383F29B3A9870070BFEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6529384929B3AC2A0070BFEF /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalyticsProtocol.swift; path = Firebase/Analytics/FirebaseAnalyticsProtocol.swift; sourceTree = SOURCE_ROOT; };
-		652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalytics.swift; path = Firebase/Analytics/FirebaseAnalytics.swift; sourceTree = SOURCE_ROOT; };
+		652E753129BCD23F00A19601 /* FirebaseAnalyticsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalyticsProtocol.swift; path = HiArt/Provider/Services/Firebase/Analytics/FirebaseAnalyticsProtocol.swift; sourceTree = SOURCE_ROOT; };
+		652E753A29BCD37400A19601 /* FirebaseAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAnalytics.swift; path = HiArt/Provider/Services/Firebase/Analytics/FirebaseAnalytics.swift; sourceTree = SOURCE_ROOT; };
 		65351712292DC4AE003C542E /* StringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTests.swift; sourceTree = "<group>"; };
 		654A53D129D0F945007C29D1 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		654A53D629D0F956007C29D1 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -128,8 +137,8 @@
 		655AF4EC294C12F50001EE11 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		658DEEC6294C163100F45BC9 /* FontTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontTests.swift; sourceTree = "<group>"; };
 		658DEECB294C191B00F45BC9 /* ButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTests.swift; sourceTree = "<group>"; };
-		658DF85B29C7D404000691BA /* FirebaseUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseUserManager.swift; path = Firebase/Users/FirebaseUserManager.swift; sourceTree = SOURCE_ROOT; };
-		658DF86329C95D29000691BA /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = Firebase/FirebaseManager.swift; sourceTree = SOURCE_ROOT; };
+		658DF85B29C7D404000691BA /* FirebaseUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseUserManager.swift; path = HiArt/Provider/Services/Firebase/Users/FirebaseUserManager.swift; sourceTree = SOURCE_ROOT; };
+		658DF86329C95D29000691BA /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseManager.swift; path = HiArt/Provider/Services/Firebase/FirebaseManager.swift; sourceTree = SOURCE_ROOT; };
 		6597A39127D1A3AC00AA7365 /* StackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackView.swift; sourceTree = "<group>"; };
 		65A3558B29CBD0F60011F9A2 /* ServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerConfiguration.swift; sourceTree = "<group>"; };
 		65B9FF4A27CD77CF00BA459B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -149,13 +158,20 @@
 		65BCB4D427CF09AB00390E0B /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		65BCB4D927CF0CAD00390E0B /* ViewConfigurationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfigurationProtocol.swift; sourceTree = "<group>"; };
 		65BCB4DE27CF0DF900390E0B /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
-		65BDC33729C2B20400A57858 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAuth.swift; path = Firebase/Authentication/FirebaseAuth.swift; sourceTree = SOURCE_ROOT; };
+		65BDC33729C2B20400A57858 /* FirebaseAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirebaseAuth.swift; path = HiArt/Provider/Services/Firebase/Authentication/FirebaseAuth.swift; sourceTree = SOURCE_ROOT; };
 		65BDC34729C2BD6800A57858 /* RegisterViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewControllerProtocol.swift; sourceTree = "<group>"; };
 		65F2585829B97DF700A69CD0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		65FD0F1229C002820019962B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68323EE185C97225DD84159E /* Pods-HiArt-HiArtUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.debug.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A967231204BAA8D6E3D5B81E /* Pods-HiArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.release.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.release.xcconfig"; sourceTree = "<group>"; };
+		A9FDC420BE1E71F8C0771440 /* Pods-HiArt.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt.develop.xcconfig"; path = "Target Support Files/Pods-HiArt/Pods-HiArt.develop.xcconfig"; sourceTree = "<group>"; };
+		B1D72875071A7013A7B636FB /* Pods-HiArt-HiArtUITests.develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.develop.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.develop.xcconfig"; sourceTree = "<group>"; };
+		C9BB13FB00B0D94351FF8FF4 /* libPods-HiArt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE948BB7B204A05C8CE74DA /* libPods-HiArtTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HiArtTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD7DAD622AB1782600D826FD /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		DD7DAD642AB1786A00D826FD /* DummyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyView.swift; sourceTree = "<group>"; };
 		E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArtTests.release.xcconfig"; path = "Target Support Files/Pods-HiArtTests/Pods-HiArtTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2AF80E3BE46818A1B7B0BC8 /* Pods-HiArt-HiArtUITests.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HiArt-HiArtUITests.prod.xcconfig"; path = "Target Support Files/Pods-HiArt-HiArtUITests/Pods-HiArt-HiArtUITests.prod.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +195,7 @@
 				65F2588129B98B9A00A69CD0 /* FirebaseCrashlytics in Frameworks */,
 				65F2587529B98B9A00A69CD0 /* FirebaseAnalytics in Frameworks */,
 				65F2586D29B98B9A00A69CD0 /* FirebaseStorageSwift-Beta in Frameworks */,
+				0B44676D20A2AEFE5A2C01FD /* libPods-HiArt.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +203,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90E52D2497FEE54A05579D36 /* libPods-HiArtTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,12 +211,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED4BA9F5B6F11D1A06F053F9 /* libPods-HiArt-HiArtUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E467CFA12B9B59E4EECBA79 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9BB13FB00B0D94351FF8FF4 /* libPods-HiArt.a */,
+				0F5EFF2DAC957E3B6CA6A465 /* libPods-HiArt-HiArtUITests.a */,
+				CEE948BB7B204A05C8CE74DA /* libPods-HiArtTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		651FA4A929CD462A00CF946F /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +246,7 @@
 				6521C12C27CC863300952542 /* HiArtUITests */,
 				6521C10927CC863100952542 /* Products */,
 				C4E0C6DE13288DA1A666C7A1 /* Pods */,
+				4E467CFA12B9B59E4EECBA79 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,24 +402,17 @@
 		65B9FF4027CD765100BA459B /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				DD7DAD612AB1780C00D826FD /* Dummy */,
 				651FA4A929CD462A00CF946F /* Login */,
 				654A53D029D0F91C007C29D1 /* Profile */,
 				65B9FF4827CD76D800BA459B /* Lunch */,
 				65B9FF4227CD766D00BA459B /* Onboarding */,
 				65B9FF4327CD768200BA459B /* Register */,
 				65B9FF4427CD768800BA459B /* Home */,
-				65B9FF4127CD766700BA459B /* Profile */,
 				65B9FF4627CD76BC00BA459B /* Menu */,
 				65B9FF4727CD76C200BA459B /* Common */,
 			);
 			path = UseCases;
-			sourceTree = "<group>";
-		};
-		65B9FF4127CD766700BA459B /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		65B9FF4227CD766D00BA459B /* Onboarding */ = {
@@ -565,8 +588,23 @@
 				047EC4C974D4EEBE4DC511C9 /* Pods-HiArt-HiArtUITests.release.xcconfig */,
 				4D6B0CA8A8480EDDD6590690 /* Pods-HiArtTests.debug.xcconfig */,
 				E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */,
+				A9FDC420BE1E71F8C0771440 /* Pods-HiArt.develop.xcconfig */,
+				304D25AE33E5CCB7E93E1D5B /* Pods-HiArt.prod.xcconfig */,
+				B1D72875071A7013A7B636FB /* Pods-HiArt-HiArtUITests.develop.xcconfig */,
+				E2AF80E3BE46818A1B7B0BC8 /* Pods-HiArt-HiArtUITests.prod.xcconfig */,
+				5A7B90A01ADE7D910DBBE424 /* Pods-HiArtTests.develop.xcconfig */,
+				18B08C67570CCD5A7970002F /* Pods-HiArtTests.prod.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD7DAD612AB1780C00D826FD /* Dummy */ = {
+			isa = PBXGroup;
+			children = (
+				DD7DAD622AB1782600D826FD /* DummyViewController.swift */,
+				DD7DAD642AB1786A00D826FD /* DummyView.swift */,
+			);
+			path = Dummy;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -654,8 +692,9 @@
 		6521C10027CC863100952542 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					6521C10727CC863100952542 = {
 						CreatedOnToolsVersion = 12.4;
@@ -805,7 +844,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export PATH=\"$PATH:/opt/homebrew/bin\"\n\nif which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		EC416789C2DC6A3B1072ADB8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -849,6 +888,7 @@
 				651FA4B529CD466500CF946F /* LoginViewControllerProtocol.swift in Sources */,
 				65B9FFA327CDC5B600BA459B /* RegisterViewController.swift in Sources */,
 				655AF4D5294BF2BB0001EE11 /* Label.swift in Sources */,
+				DD7DAD652AB1786A00D826FD /* DummyView.swift in Sources */,
 				658DF86429C95D29000691BA /* FirebaseManager.swift in Sources */,
 				654A53D229D0F945007C29D1 /* ProfileView.swift in Sources */,
 				658DF85C29C7D404000691BA /* FirebaseUserManager.swift in Sources */,
@@ -865,6 +905,7 @@
 				65B9FF9B27CDA9CF00BA459B /* OnboardingViewController.swift in Sources */,
 				65BDC34829C2BD6800A57858 /* RegisterViewControllerProtocol.swift in Sources */,
 				65B9FFA827CDC5BF00BA459B /* RegisterView.swift in Sources */,
+				DD7DAD632AB1782600D826FD /* DummyViewController.swift in Sources */,
 				65BCB4CF27CF094200390E0B /* BaseViewController.swift in Sources */,
 				65B9FF6E27CD7AC300BA459B /* Constants.swift in Sources */,
 				65BCB4C927CF087600390E0B /* OnboardingControllerProtocol.swift in Sources */,
@@ -1071,7 +1112,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLFQG83687;
 				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1092,7 +1133,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLFQG83687;
 				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1258,14 +1299,14 @@
 		};
 		652CFA1829CA93DC00C9AA21 /* Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 527C517C059ED95D94E8E5AB /* Pods-HiArt.debug.xcconfig */;
+			baseConfigurationReference = A9FDC420BE1E71F8C0771440 /* Pods-HiArt.develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLFQG83687;
 				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1280,7 +1321,7 @@
 		};
 		652CFA1929CA93DC00C9AA21 /* Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D6B0CA8A8480EDDD6590690 /* Pods-HiArtTests.debug.xcconfig */;
+			baseConfigurationReference = 5A7B90A01ADE7D910DBBE424 /* Pods-HiArtTests.develop.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1303,7 +1344,7 @@
 		};
 		652CFA1A29CA93DC00C9AA21 /* Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68323EE185C97225DD84159E /* Pods-HiArt-HiArtUITests.debug.xcconfig */;
+			baseConfigurationReference = B1D72875071A7013A7B636FB /* Pods-HiArt-HiArtUITests.develop.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -1381,14 +1422,14 @@
 		};
 		652CFA1C29CA93F900C9AA21 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A967231204BAA8D6E3D5B81E /* Pods-HiArt.release.xcconfig */;
+			baseConfigurationReference = 304D25AE33E5CCB7E93E1D5B /* Pods-HiArt.prod.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ZLFQG83687;
 				INFOPLIST_FILE = HiArt/SupportingFiles/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1403,7 +1444,7 @@
 		};
 		652CFA1D29CA93F900C9AA21 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E02C526A56DEF4C8C1CC1A11 /* Pods-HiArtTests.release.xcconfig */;
+			baseConfigurationReference = 18B08C67570CCD5A7970002F /* Pods-HiArtTests.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1426,7 +1467,7 @@
 		};
 		652CFA1E29CA93F900C9AA21 /* Prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 047EC4C974D4EEBE4DC511C9 /* Pods-HiArt-HiArtUITests.release.xcconfig */;
+			baseConfigurationReference = E2AF80E3BE46818A1B7B0BC8 /* Pods-HiArt-HiArtUITests.prod.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

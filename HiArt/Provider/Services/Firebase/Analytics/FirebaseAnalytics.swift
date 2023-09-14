@@ -8,8 +8,6 @@
 import UIKit
 import FirebaseAnalytics
 
-struct FirebaseAnalytics { }
-
 struct FirebaseAnalyticsActionTag {
     let viewAppear = "view_appear"
     let pressButton = "press_button"
@@ -35,7 +33,7 @@ struct FirebaseAnalyticsCustomKey {
     let AnalyticsParameterAction = "action"
 }
 
-extension FirebaseAnalytics: FirebaseAnalyticsDelegate {
+class FirebaseAnalytics: FirebaseAnalyticsDelegate {
 
     func tagViewController(_ viewName: String, _ fileName: String, _ action: String) {
         Analytics.logEvent(AnalyticsEventScreenView, parameters: [

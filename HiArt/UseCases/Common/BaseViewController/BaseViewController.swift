@@ -9,7 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
-    private var _delegate: FirebaseAnalyticsDelegate!
+    var _delegate: FirebaseAnalyticsDelegate?
     public let sectionNameTag = FirebaseAnalyticsSectionNameTag()
     public let actionTag = FirebaseAnalyticsActionTag()
 
