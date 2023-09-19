@@ -16,6 +16,13 @@ class RegisterViewController: BaseViewController {
         super.viewDidLoad()
         setupDelegates()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tagViewController(sectionName: sectionNameTag.register,
+                          fileName: self.getViewControllerName(),
+                          action: actionTag.viewAppear)
+    }
 
     override func loadView() {
         view = _view
