@@ -17,7 +17,7 @@ class MainCoordinator: Coordinator {
     }
 
     func start() {
-        showRegister()
+        showOnboarding()
     }
 
     func showOnboarding() {
