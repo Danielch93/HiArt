@@ -1,16 +1,20 @@
 PODS:
   - EasyPeasy (1.10.0)
+  - SwiftLint (0.52.4)
 
 DEPENDENCIES:
   - EasyPeasy
+  - SwiftLint
 
 SPEC REPOS:
   trunk:
     - EasyPeasy
+    - SwiftLint
 
 SPEC CHECKSUMS:
   EasyPeasy: b9b1bae024d21a7dfa9bad26d6826d88348cc6f1
+  SwiftLint: 1cc5cd61ba9bacb2194e340aeb47a2a37fda00b3
 
-PODFILE CHECKSUM: 4f0987137c8e4c88558d59807cc7184d1d32bfb2
+PODFILE CHECKSUM: 901526579646380a8684ddccf9d3bd327137a0ef
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.12.1

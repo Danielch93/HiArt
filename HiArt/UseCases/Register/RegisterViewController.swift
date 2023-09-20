@@ -17,6 +17,13 @@ class RegisterViewController: BaseViewController {
         setupDelegates()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tagViewController(sectionName: sectionNameTag.register,
+                          fileName: self.getViewControllerName(),
+                          action: actionTag.viewAppear)
+    }
+
     override func loadView() {
         view = _view
     }
@@ -25,6 +32,7 @@ class RegisterViewController: BaseViewController {
 extension RegisterViewController {
 
     func setupDelegates() {
+        _view.delegate = self
         _view.nameTextField.delegate = self
         _view.emailTextField.delegate = self
         _view.phoneTextField.delegate = self
@@ -47,4 +55,10 @@ extension RegisterViewController: UITextFieldDelegate {
         return true
     }
 
+}
+
+extension RegisterViewController: RegisterViewControllerProtocol {
+    func registerUser() {
+        FirebaseUserManager.createUser()
+    }
 }

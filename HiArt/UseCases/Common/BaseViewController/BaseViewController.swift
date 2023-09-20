@@ -9,9 +9,14 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    var _delegate: FirebaseAnalyticsDelegate?
+    public let sectionNameTag = FirebaseAnalyticsSectionNameTag()
+    public let actionTag = FirebaseAnalyticsActionTag()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupNavbar()
+        setupTagDelegates()
         edgesForExtendedLayout = []
     }
 
@@ -32,4 +37,26 @@ class BaseViewController: UIViewController {
     @objc func close() {
         print("Salir")
     }
+
+}
+
+// MARK: - Extension Tag BaseViewController
+extension BaseViewController {
+
+    private func setupTagDelegates() {
+        _delegate = FirebaseAnalytics()
+    }
+
+    func tagViewController(sectionName: String, fileName: String, action: String) {
+        _delegate?.tagViewController(sectionName, fileName, action)
+    }
+
+    func tagButton(sectionName: String, elementName: String, fileName: String, action: String) {
+        _delegate?.tagButton(sectionName, elementName, fileName, action)
+    }
+
+    func tagService(sectionName: String, serviceName: String, fileName: String, action: String) {
+        _delegate?.tagService(sectionName, serviceName, fileName, action)
+    }
+
 }

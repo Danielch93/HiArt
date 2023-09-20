@@ -7,64 +7,287 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "AB5D7586-504E-4ABB-B92E-09D8241B3ABC"
+            uuid = "D24DB916-E94B-4BD8-A1AA-A46FDCBEEC11"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiArt/UseCases/Common/BaseView/BaseView.swift"
+            filePath = "Firebase/Authentication/FirebaseAuth.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "setupContrains()"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "signIn()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A149386C-5A5D-4131-9103-5A075AC3EB03"
+            uuid = "B9588D66-C17C-4765-82DB-5433CDECD621"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiArt/UseCases/Common/BaseView/BaseView.swift"
+            filePath = "Firebase/Authentication/FirebaseAuth.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "FirebaseAuth"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B9588D66-C17C-4765-82DB-5433CDECD621 - c944e709d68a628a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HiArt.FirebaseAuth.auth.getter : __C.FIRAuth"
+                  moduleName = "HiArt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniel/Projects/Swift/HiArt/Firebase/Authentication/FirebaseAuth.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "B9588D66-C17C-4765-82DB-5433CDECD621 - ab141fd30bbd345b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HiArt.FirebaseAuth.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; HiArt.FirebaseAuth"
+                  moduleName = "HiArt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniel/Projects/Swift/HiArt/Firebase/Authentication/FirebaseAuth.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "142">
+               </Location>
+               <Location
+                  uuid = "B9588D66-C17C-4765-82DB-5433CDECD621 - e1e6d5b1fe9abd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "HiArt.FirebaseAuth.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;HiArt.FirebaseAuth&gt;"
+                  moduleName = "HiArt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniel/Projects/Swift/HiArt/Firebase/Authentication/FirebaseAuth.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "12"
+                  endingLineNumber = "12"
+                  offsetFromSymbolStart = "98">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "196D47DB-3E53-4909-A040-FAC507CFC05D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Firebase/Authentication/FirebaseAuth.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "23"
             endingLineNumber = "23"
-            landmarkName = "init(frame:)"
+            landmarkName = "signIn()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "69DB1787-3795-4DB8-8C07-F8F11A445147"
+            uuid = "8029FE50-5139-4CF7-8DFC-F2EF53499F60"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiArt/UseCases/Onboarding/OnboardingView.swift"
+            filePath = "../../../Library/Developer/Xcode/DerivedData/HiArt-dzjbpqbohibsuxgecuxxuvazfmyn/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/Auth/FIRAuth.m"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "buildHierarchy()"
+            startingLineNumber = "634"
+            endingLineNumber = "634"
+            landmarkName = "-signInWithEmail:password:completion:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "429A81A9-F16B-455A-82D3-9CFE50707BFF"
+            uuid = "90175DAF-6947-4F2E-BD19-DC3D9AF17E4A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "HiArt/UseCases/Login/LoginView.swift"
+            filePath = "Firebase/Users/FirebaseUserManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "pressButton()"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "createUser()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "90175DAF-6947-4F2E-BD19-DC3D9AF17E4A - 4d092d68c8457050"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static HiArt.FirebaseUserManager.createUser() -&gt; ()"
+                  moduleName = "HiArt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniel/Projects/Swift/HiArt/Firebase/Users/FirebaseUserManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "90175DAF-6947-4F2E-BD19-DC3D9AF17E4A - 25b556bd3506241c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static HiArt.FirebaseUserManager.createUser() -&gt; ()"
+                  moduleName = "HiArt"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/daniel/Projects/Swift/HiArt/Firebase/Users/FirebaseUserManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "35">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9243471-DDFD-4322-B4C4-79F127A28B32"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Firebase/Users/FirebaseUserManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "createUser()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0323E3BE-59F1-475D-8096-D779FDEC6F24"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/UseCases/Register/RegisterViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5823C101-BD58-4D32-B523-956944106688"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/Red/RedConfiguration.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "setupRedConfig()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83F0FAB3-98D3-497C-ACF7-FF4C3305D596"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/Red/RedConfiguration.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "setupRedConfig()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2091F92B-08E9-42B7-AF6B-FD070A8C5D93"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/Red/RedConfiguration.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setupRedConfig()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A7EEAC95-EA10-489D-95CE-2B7F643ECF94"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/Red/RedConfiguration.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "setupRedConfig()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "44BBFFC6-D4F1-4C52-BCA4-17596BD39A85"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/Server/ServerConfiguration.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "debugServer()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41854006-83B9-459C-9D90-E193CF53066C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HiArt/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "setupSDK()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

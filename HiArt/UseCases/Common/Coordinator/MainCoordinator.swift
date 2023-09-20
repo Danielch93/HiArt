@@ -20,14 +20,26 @@ class MainCoordinator: Coordinator {
         showOnboarding()
     }
 
+    func showOnboarding() {
+        let viewController = OnboardingViewController()
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: false)
+    }
+
+    func showLogin() {
+        let viewController = LoginViewController()
+        viewController.coordinator = self
+        navigationController.pushViewController(viewController, animated: false)
+    }
+
     func showRegister() {
         let viewController = RegisterViewController()
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
 
-    func showOnboarding() {
-        let viewController = OnboardingViewController()
+    func showProfile() {
+        let viewController = ProfileViewController()
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }

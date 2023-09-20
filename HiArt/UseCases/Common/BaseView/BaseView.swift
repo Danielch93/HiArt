@@ -9,6 +9,7 @@ import UIKit
 import EasyPeasy
 
 class BaseView: UIView {
+
     lazy var container: UIStackView = {
         let stackView = UIStackView()
         stackView.distribution = .fill
@@ -21,18 +22,25 @@ class BaseView: UIView {
         super.init(frame: frame)
         setupView()
     }
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
 }
 
 extension BaseView: ViewConfigurationProtocol {
-    @objc func buildHierarchy() {}
+
+    @objc func buildHierarchy() { }
+
+    @objc func setupEvents() { }
+
     @objc func configureView() {
         backgroundColor = .white
     }
-    @objc func setupEvents() {}
+
     @objc func setupContrains() {
         container.easy.layout(Edges(0))
     }
+
 }
