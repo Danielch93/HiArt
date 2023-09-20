@@ -17,6 +17,13 @@ class RegisterViewController: BaseViewController {
         setupDelegates()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tagViewController(sectionName: sectionNameTag.register,
+                          fileName: self.getViewControllerName(),
+                          action: actionTag.viewAppear)
+    }
+
     override func loadView() {
         view = _view
     }
@@ -51,5 +58,7 @@ extension RegisterViewController: UITextFieldDelegate {
 }
 
 extension RegisterViewController: RegisterViewControllerProtocol {
-    func registerUser() { }
+    func registerUser() {
+        FirebaseUserManager.createUser()
+    }
 }

@@ -15,6 +15,7 @@
 			dependencies = (
 			);
 			name = SwiftLint;
+			productName = SwiftLint;
 		};
 /* End PBXAggregateTarget section */
 
@@ -113,7 +114,7 @@
 		752FCBE56365C87DBA463070D997AA1C /* Constant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = EasyPeasy/Constant.swift; sourceTree = "<group>"; };
 		7AFF2928933BF4D21130C7319A2DFCF2 /* Pods-HiArt.prod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiArt.prod.xcconfig"; sourceTree = "<group>"; };
 		7DB47697FC34F5C87C0FAA0810D3D72C /* Pods-HiArt-HiArtUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiArt-HiArtUITests.release.xcconfig"; sourceTree = "<group>"; };
-		8328E6FCAC1E4D4E635FEAE69D63A19E /* EasyPeasy */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = EasyPeasy; path = libEasyPeasy.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8328E6FCAC1E4D4E635FEAE69D63A19E /* libEasyPeasy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEasyPeasy.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		89474F65FA0B6766B683B58D3938C2C9 /* Pods-HiArt-HiArtUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiArt-HiArtUITests-dummy.m"; sourceTree = "<group>"; };
 		8AA906AA73C90072F29B631727E2E6B9 /* Attribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Attribute.swift; path = EasyPeasy/Attribute.swift; sourceTree = "<group>"; };
 		8C9BEDE9B524C96FBA58E1670F7729C0 /* PositionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PositionAttribute.swift; path = EasyPeasy/PositionAttribute.swift; sourceTree = "<group>"; };
@@ -123,7 +124,7 @@
 		97B39C02A3FF15D0AF3719630DC29DD0 /* EasyPeasy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyPeasy.release.xcconfig; sourceTree = "<group>"; };
 		98EAA188EA5CCD1F06474DAA57B98778 /* Pods-HiArt-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HiArt-dummy.m"; sourceTree = "<group>"; };
 		991B05036822E26F60E4DFAEB30ABD2C /* Pods-HiArt-HiArtUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HiArt-HiArtUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EBA03EED706229415446105FB09034F /* Collection+Easy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Easy.swift"; path = "EasyPeasy/Collection+Easy.swift"; sourceTree = "<group>"; };
 		9F94A69A070CF07FCFC5967D12FD4E75 /* Pods-HiArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HiArt.debug.xcconfig"; sourceTree = "<group>"; };
 		A5B031373A78941B98171B57AADBFBF2 /* DimensionAttribute.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DimensionAttribute.swift; path = EasyPeasy/DimensionAttribute.swift; sourceTree = "<group>"; };
@@ -292,7 +293,6 @@
 				CF31189ACF91FA069AB69F9E29989374 /* UIView+Easy.swift */,
 				3892D3DF3F4ECA8C452E3CE222336A90 /* Support Files */,
 			);
-			name = EasyPeasy;
 			path = EasyPeasy;
 			sourceTree = "<group>";
 		};
@@ -310,7 +310,7 @@
 		D2DCD217898D61439FDCAB6CD7ED4604 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8328E6FCAC1E4D4E635FEAE69D63A19E /* EasyPeasy */,
+				8328E6FCAC1E4D4E635FEAE69D63A19E /* libEasyPeasy.a */,
 				8F8744DCFD9AA17B1B52EC05D09A87E1 /* Pods-HiArt */,
 				FD6F87C7C369BEA4995B42C4D703E121 /* Pods-HiArt-HiArtUITests */,
 				A6E232736C42E91586FCA066B55B48C3 /* Pods-HiArtTests */,
@@ -330,7 +330,6 @@
 			children = (
 				7F1FC5DBF084207923049B62395EADB9 /* Support Files */,
 			);
-			name = SwiftLint;
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
@@ -415,7 +414,7 @@
 			);
 			name = EasyPeasy;
 			productName = EasyPeasy;
-			productReference = 8328E6FCAC1E4D4E635FEAE69D63A19E /* EasyPeasy */;
+			productReference = 8328E6FCAC1E4D4E635FEAE69D63A19E /* libEasyPeasy.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		CE61C6BF8A36E8001550FE2F64BC5A2F /* Pods-HiArt-HiArtUITests */ = {
@@ -721,7 +720,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/EasyPeasy/EasyPeasy.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -870,7 +869,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/EasyPeasy/EasyPeasy.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1063,7 +1062,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/EasyPeasy/EasyPeasy.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -1172,7 +1171,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				GCC_PREFIX_HEADER = "Target Support Files/EasyPeasy/EasyPeasy-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MODULEMAP_FILE = Headers/Public/EasyPeasy/EasyPeasy.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
