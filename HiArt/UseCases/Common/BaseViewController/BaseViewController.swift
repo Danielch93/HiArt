@@ -20,7 +20,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = getViewControllerName() //This method could be changed to get a more specific title 
+        title = getViewControllerTitle()
         setupNavbar()
         setupTagDelegates()
         edgesForExtendedLayout = []
@@ -32,6 +32,7 @@ class BaseViewController: UIViewController {
         standardAppearance.configureWithOpaqueBackground()
         standardAppearance.backgroundColor = .systemBlue
         standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        standardAppearance.shadowColor = .clear
 
         let compactAppearance = standardAppearance.copy()
         compactAppearance.backgroundColor = .systemBlue
