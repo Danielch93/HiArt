@@ -11,6 +11,13 @@
 "APP_CREATOR" = "HiArt creado por %@";
 "APP_LANGUAGE" = "HiArt, lenguaje soportado: %@ y %@";
 
+// ViewController
+"VC_REGISTER_TITLE" = "Registro";
+"VC_ONBOARDING_TITLE" = "Inicio";
+"VC_PROFILE_TITLE" = "Perfil";
+"VC_LOGIN_TITLE" = "Ingreso";
+"VC_DUMMY_TITLE" = "Dummy";
+
 // Onboarding
 "OB_PAGE_ONE_SUBTITLE" = "";
 "OB_PAGE_ONE_BUTTON_NEXT" = "Siguiente";

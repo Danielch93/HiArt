@@ -7,6 +7,11 @@
 
 import UIKit
 
+enum NavigateTo {
+    case back
+    case root
+}
+
 class BaseViewController: UIViewController {
 
     var _delegate: FirebaseAnalyticsDelegate?
@@ -15,27 +20,55 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = getViewControllerTitle()
         setupNavbar()
         setupTagDelegates()
         edgesForExtendedLayout = []
     }
 
     func setupNavbar() {
-        navigationController?.navigationBar.barTintColor = .white
-        navigationController?.navigationBar.isTranslucent = false
-        navigationController?.navigationBar.shadowImage = UIImage()
+        let navBar = self.navigationController?.navigationBar
+        let standardAppearance = UINavigationBarAppearance()
+        standardAppearance.configureWithOpaqueBackground()
+        standardAppearance.backgroundColor = .systemBlue
+        standardAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        standardAppearance.shadowColor = .clear
+
+        let compactAppearance = standardAppearance.copy()
+        compactAppearance.backgroundColor = .systemBlue
+
+        navBar?.tintColor = .white
+        navBar?.standardAppearance = standardAppearance
+        navBar?.scrollEdgeAppearance = standardAppearance
+
+        if #available(iOS 15.0, *) { // For compatibility with earlier iOS.
+            navBar?.compactScrollEdgeAppearance = compactAppearance
+        }
+
+        setupButtonsNavbar()
     }
 
-    func addCloseNavigationBar() {
-        navigationItem.rightBarButtonItem =
-            UIBarButtonItem(title: "╳",
-                            style: .plain,
-                            target: self,
-                            action: #selector(close))
+    func setupButtonsNavbar() {
+        let navBarItem = self.navigationItem
+        if self.navigationController?.viewControllers.count != 1 {
+            navBarItem.leftBarButtonItem = addCustomButtonNavigationBar(title: "Back", action: .back)
+        }
+        navBarItem.rightBarButtonItem = addCustomButtonNavigationBar(title: "Root", action: .root)
     }
 
-    @objc func close() {
-        print("Salir")
+    func addCustomButtonNavigationBar(title: String, action: NavigateTo) -> UIBarButtonItem {
+        return UIBarButtonItem(title: title,
+                               style: .plain,
+                               target: self,
+                               action: action == .back ? #selector(back) : #selector(rootView))
+    }
+
+    @objc func back() {
+        self.navigationController?.popViewController(animated: true)
+    }
+
+    @objc func rootView() {
+        self.navigationController?.popToRootViewController(animated: true)
     }
 
 }
