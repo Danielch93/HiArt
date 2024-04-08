@@ -123,7 +123,7 @@
 		6521C12927CC863300952542 /* HiArtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HiArtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6521C12D27CC863300952542 /* HiArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiArtUITests.swift; sourceTree = "<group>"; };
 		6521C12F27CC863300952542 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6529382829B3A5B20070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		6529382829B3A5B20070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "es-419"; path = "es-419.lproj"; sourceTree = "<group>"; };
 		6529382C29B3A5B30070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "../Util/es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383629B3A69D0070BFEF /* es-419 */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-419"; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6529383F29B3A9870070BFEF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
