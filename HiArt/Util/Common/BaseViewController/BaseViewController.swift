@@ -25,6 +25,18 @@ class BaseViewController: UIViewController {
         setupTagDelegates()
         edgesForExtendedLayout = []
     }
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    deinit {
+        print("deInit")
+    }
 
     func setupNavbar() {
         let navBar = self.navigationController?.navigationBar

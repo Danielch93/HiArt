@@ -7,10 +7,10 @@
 
 import UIKit
 
-class LoginViewController: BaseViewController {
+final class LoginViewController: BaseViewController {
 
     private lazy var _view = LoginView()
-    var coordinator: MainCoordinator?
+    weak var coordinator: LoginCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ extension LoginViewController {
 extension LoginViewController: LoginViewControllerProtocol {
 
     func goToRegisterUser() {
-        coordinator?.showRegister()
+        //coordinator?.showRegister()
     }
 
     func goToProfile() {
