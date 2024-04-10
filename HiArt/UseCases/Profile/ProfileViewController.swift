@@ -8,15 +8,19 @@
 import UIKit
 
 class ProfileViewController: BaseViewController {
-
+    
     private lazy var _view = ProfileView()
-    var coordinator: MainCoordinator?
-
+    weak var coordinator: ProfileCoordinator?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func loadView() {
         view = _view
+    }
+    
+    deinit {
+        coordinator?.didFinish()
     }
 }
